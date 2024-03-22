@@ -1,8 +1,8 @@
 {
-  "name": "rosbag",
-  "version": "4.0.1",
+  "name": "@azurity/rosbag",
+  "version": "4.0.2",
   "license": "Apache-2.0",
-  "repository": "cruise-automation/rosbag.js",
+  "repository": "azurity/rosbag.js",
   "dependencies": {
     "buffer": "6.0.3",
     "heap": "0.2.7",
