@@ -155,15 +155,15 @@ class StandardTypeReader {
   }
 
   int64() {
-    const { offset } = this;
+    const result = this.view.getBigInt64(this.offset, true);
     this.offset += 8;
-    return new DataView(this.buffer.buffer, offset).getBigInt64(0, true);
+    return result;
   }
 
   uint64() {
-    const { offset } = this;
+    const result = this.view.getBigUint64(this.offset, true);
     this.offset += 8;
-    return new DataView(this.buffer.buffer, offset).getBigUint64(0, true);
+    return result;
   }
 
   time() {

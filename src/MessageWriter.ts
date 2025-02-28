@@ -148,11 +148,11 @@ class StandardTypeWriter {
   }
 
   int64(value: number | bigint) {
-    new DataView(this.buffer.buffer, this.offsetCalculator.int64()).setBigInt64(0, BigInt(value), true);
+    this.view.setBigInt64(this.offsetCalculator.int64(), BigInt(value), true);
   }
 
   uint64(value: number) {
-    new DataView(this.buffer.buffer, this.offsetCalculator.int64()).setBigUint64(0, BigInt(value), true);
+    this.view.setBigUint64(this.offsetCalculator.int64(), BigInt(value), true);
   }
 
   time(time: Time) {

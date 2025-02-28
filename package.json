@@ -1,6 +1,6 @@
 {
   "name": "@azurity/rosbag",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "license": "Apache-2.0",
   "repository": "azurity/rosbag.js",
   "dependencies": {
